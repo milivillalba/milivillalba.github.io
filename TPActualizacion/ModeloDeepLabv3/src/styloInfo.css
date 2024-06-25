@@ -1,0 +1,21 @@
+body {
+    background-color: #ffe6f2; /* Color rosita */
+    background-image: url('https://www.toptal.com/designers/subtlepatterns/uploads/memphis-mini.png'); /* Fondo genial */
+    background-size: cover;
+    color: #5c2a9d; /* Texto morado */
+  }
+  .navbar-light {
+    background-color: #f8c6d8;
+  }
+  .nav-link {
+    color: #5c2a9d !important;
+  }
+  .container {
+    background-color: rgba(255, 255, 255, 0.8); /* Fondo blanco semi-transparente */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  h2 {
+    color: #d63384; /* Encabezados en rosa más oscuro */
+  }

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Encabezado con Botones</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="styloInfo.css">
+  
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="index.html">Volver al Modelo</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#sobre-modelo">Sobre Modelo</a>
+        </li>
+        <!-- Añade aquí el otro botón con tu enlace -->
+      </ul>
+    </div>
+  </nav>
+  <div class="container mt-5">
+    <div id="sobre-modelo">
+      <h2>Descripción del repositorio.</h2>
+      <p>El modelo se extrajo del repositorio de TensorFlow.js en GitHub. Específicamente, se utilizó el modelo DeepLab v3 para segmentación de imágenes. La URL del repositorio es: https://github.com/tensorflow/tfjs-models/blob/master/deeplab/README.md</p>
+       
+     <h2>Objetivo de la Utilización del Modelo</h2>
+      <p>
+        Es realizar segmentación de imágenes, esto se basa en el proceso de subdividir una imagen digital en múltiples segmentos (conjuntos de píxeles) para simplificar o cambiar la representación de una imagen en algo más significativo y más fácil de analizar. Específicamente, este modelo está diseñado para la segmentación semántica, es decir que clasifica cada píxel de la imagen en una categoría.
+      </p>
+      <h2>Datos particulares del modelo:</h2>
+      <ul>
+        <li>Creadores:fue desarrollado por investigadores de Google AI.</li>
+        <li>Fecha de creación: la primera versión fue presentada en un artículo en 2016..</li>
+        <li>Versión: no está claramente indicada, pero está basada en la implementación de DeepLab v3+.</li>
+      </ul>
+      <h2>¿Qué es la Segmentación Semántica?</h2>
+      <p>
+       Es una técnica en visión por computadora cuyo objetivo es clasificar cada píxel de una imagen en una categoría específica. Por ejemplo, en una imagen de una carretera, se pueden identificar y diferenciar los píxeles que corresponden a coches, señales de tráfico, carreteras, etc.
+      </p>
+      
+      <h2>¿Cómo se usa Modelo DeepLab v3?</h2>
+      <p>En el primer paso de la segmentación semántica, una imagen se alimenta a través de un modelo previamente entrenado basado en MobileNet-v2 que es una arquitectura base, conocido por su eficiencia y buen rendimiento.</p>
+      <p>Existen tres tipos de modelos pre-entrenados disponibles, cada modelo reconoce un conjunto diferente de clases de objetos en una imagen:</p>
+      <ol>
+        <li><strong>DeepLab Pascal:</strong> 
+          <p>Este modelo está entrenado en el conjunto de datos Pascal VOC (Visual Object Classes Challange), conocido por sus anotaciones detalladas y su enfoque en la segmentación y detección de objetos.</p>
+         <p>- Uso: es ideal para tareas de detección de objetos y segmentación semántica en un amplio rango de categorías.</p>
+   
+          </li>
+        <li><strong>DeepLab Cityscapes:</strong>
+        <p>
+          Este modelo está entrenado en el conjunto de datos Cityscapes (paisajes urbanos), diseñado específicamente para la segmentación de escenas urbanas.</p>
+          <p>- Uso: es adecuados para proyectos de visión por computadora en entornos urbanos, como vehículos autónomos y análisis de tráfico.</p></li>
+        <li><strong>DeepLab ADE20K:</strong> 
+          <p>Este modelo está entrenado en el conjunto de datos ADE20K, que incluye una amplia variedad de categorías y escenas complejas.</p>
+          <p>- Uso: es perfecto para la segmentación de escenas diversificadas y complejas, como interiores de edificios y paisajes naturales.</p></li>
+      </ol>
+      <h2>Ejemplo de Funcionamiento</h2>
+      <p>
+        Para implementar DeepLab v3 en el navegador, generalmente se sigue el siguiente flujo:
+      </p>
+      <ol>
+        <li><strong>Carga del Modelo:</strong> Se carga el modelo DeepLab v3 preentrenado en el navegador usando una librería como TensorFlow.js.</li>
+        <li><strong>Preprocesamiento de la Imagen:</strong> La imagen de entrada se preprocesa para que sea compatible con el modelo (e.g., redimensionamiento y normalización).</li>
+        <li><strong>Predicción:</strong> La imagen procesada se pasa a través del modelo para obtener las predicciones de la segmentación.</li>
+        <li><strong>Postprocesamiento:</strong> Las predicciones se postprocesan para obtener el mapa de segmentación final, que se superpone a la imagen original o se muestra de alguna otra forma útil para el usuario.</li>
+      </ol>
+    </div>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
